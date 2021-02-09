@@ -96,15 +96,13 @@
 </body>
 
 <?php
+    if (isset($_GET['submit'])) {
+        echo "submited";
+        header("location:results.php?price=69420");
+    }
 
-if (isset($_GET['submit'])) {
-    echo "submited";
-    header("location:results.php?price=69420");
-}
-
-if (isset($_GET['gender'])) {
-    $gender = $_GET['gender'];
-    echo $gender;
-}
-
+    if (isset($_GET['gender'])) {
+        $gender = $_GET['gender'];
+        echo $gender;
+    }
 ?>
