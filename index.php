@@ -3,7 +3,7 @@
 <head>
 <head>
     <title>Rechner</title>
-    <link rel="stylesheet" href="include/css/style.css">
+    <link rel="stylesheet" href="include/css/indexstyle.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
