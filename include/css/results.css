@@ -15,9 +15,18 @@
     font-size: 200;
 }
 
-.results {
+.body h2 {
+    background-color: rgb(155, 158, 161);
     display: flex;
     justify-content: center;
     padding: 2vh;
     font-size: 150;
+}
+
+.results{
+    display: flex;
+    justify-content: center;
+    padding: 2vh;
+    font-size: 150;
+}
 }
