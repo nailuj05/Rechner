@@ -21,3 +21,17 @@
 </body>
 
 </html>
+
+<?php
+
+$conn =  new mysqli("localhost", "root", "", 'menschen');
+$result = $conn->query($sql);
+
+while ($row = $result->fetch_assoc()) {
+    echo "id: " . $row["id"] . " - Alter: " . $row["age"] . " Größe: " . $row["height"] . "<br>";
+
+    foreach ($row as &$value) {
+    }
+}
+
+?>

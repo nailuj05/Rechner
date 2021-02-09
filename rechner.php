@@ -9,7 +9,7 @@
 </head>
 
 <body>
-<?php include 'include/page-elements/header.php'; ?>
+    <?php include 'include/page-elements/header.php'; ?>
 
     <form class="inputs">
 
@@ -36,42 +36,41 @@
         <!-- Genderbasierte Fallunterscheidung der Geschlechtsfunktionen -->
 
         <?php
-            if (isset($_GET['gender'])) {
-                $gender = $_GET['gender'];
+        if (isset($_GET['gender'])) {
+            $gender = $_GET['gender'];
 
-                if($gender=="woman"){
-                    // echo "woman";
-                    echo"
+            if ($gender == "woman") {
+                // echo "woman";
+                echo "
                         <div class='input'>
                             <label for='gender-size'>Brustumlänge: <span id='gender-size-output'></span></label>
 
                     ";
-                }
+            }
 
-                if($gender=="man"){
-                    echo"
+            if ($gender == "man") {
+                echo "
                     <div class='input'>
                         <label for='gender-size'>Penisgröße: <span id='gender-size-output'></span></label>
 
                 ";
-                }
+            }
 
-                if($gender=="helicopter"){
-                    echo"
+            if ($gender == "helicopter") {
+                echo "
                     <div class='input'>
                         <label for='gender-size'>Kaliber in cm: <span id='gender-size-output'></span></label>
 
                     ";
-                }
+            }
 
-                echo "
+            echo "
                 <input type='range' min='0' max='60' value='50' class='slider' id='gender-size-slider'>
                 </div>
                 ";
-            }
-            else{
-                echo "Undefiniertes Geschlecht";
-            }
+        } else {
+            echo "Undefiniertes Geschlecht";
+        }
 
         ?>
 
@@ -96,13 +95,13 @@
 </body>
 
 <?php
-    if (isset($_GET['submit'])) {
-        echo "submited";
-        header("location:results.php?price=69420");
-    }
+if (isset($_GET['submit'])) {
+    echo "submited";
+    header("location:results.php?price=69420");
+}
 
-    if (isset($_GET['gender'])) {
-        $gender = $_GET['gender'];
-        echo $gender;
-    }
+if (isset($_GET['gender'])) {
+    $gender = $_GET['gender'];
+    echo $gender;
+}
 ?>
