@@ -4,17 +4,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.header {
-    background-color: rgb(96, 170, 235);
-    display: flex;
-    justify-content: center;
-    padding: 2vh;
-}
-
-.headline {
-    font-size: 200;
-}
-
 .inputs {
     padding: 1vh;
     height: 30vh;

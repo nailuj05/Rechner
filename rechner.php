@@ -9,10 +9,8 @@
 </head>
 
 <body>
-    <div class="header">
-        <h1 class="headline">Very nice Rechner</h1>
-    </div>
-
+    <?php include 'include/page-elements/header.php';?>
+    
     <form>
         <div class="inputs">
 
@@ -47,7 +45,7 @@
             </div>
 
 
-            <a href="">Test</a>
+            <a href="results.php">Test</a>
         </div>
     </form>
 

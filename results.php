@@ -11,9 +11,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="header">
-        <h1 class="headline">Very nice Rechner</h1>
-    </div>
+    <?php include 'include/page-elements/header.php';?>
 
     <div class="body">
         <h2 class="results">Deine Ergebnisse</h2>

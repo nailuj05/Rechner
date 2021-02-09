@@ -13,9 +13,7 @@
 </head>
 
 <body>
-    <div class="header">
-        <h1 class="headline">Very nice Rechner</h1>
-    </div>
+    <?php include 'include/page-elements/header.php';?> 
 
     <div class="body">
         <h2 class="choosegender">Wähle das Geschlecht</h2>
