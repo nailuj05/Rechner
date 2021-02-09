@@ -100,7 +100,7 @@
 if (isset($_POST['submit'])) {
 
     // sammeln aller variablen 
-    $alter = $_POST['age'];
+    $age = $_POST['age'];
     $height = $_POST['height'];
     $hairColor = $_POST['hairColor'];
     $eyeColor = $_POST['eyeColor'];
@@ -108,14 +108,21 @@ if (isset($_POST['submit'])) {
     $shoeSize = $_POST['shoeSize'];
     $hairLength = $_POST['hairLength'];
 
-    header("location:results.php?price=69420");
+    $conn = new mysqli("localhost", "root", "", "shop");
+
+    if ($conn->connect_error) {
+        die("There was an error connection the Database");
+    }
+
+    $sql = "INSERT INTO menschen (age, height, hairColor, hairLength, gender, shoeSize, eyeColor)
+        VALUES ('$age', '$height', '$hairColor', '$hairLength', '$genderValue', '$shoeSize', '$eyeColor' )";
+
+
+    if ($conn->query($sql) === TRUE) {
+        header("location:results.php?price=69420");
+    } else {
+        echo "There was an error :(" . "<br>" .  $conn->error;
+    }
 }
-
-
-if (isset($_GET['submit'])) {
-    echo "submited";
-    header("location:results.php?price=69420");
-}
-
 
 ?>
