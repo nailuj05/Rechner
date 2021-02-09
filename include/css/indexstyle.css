@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background-color: rgb(96, 170, 235);
+    display: flex;
+    justify-content: center;
+    padding: 2vh;
+}
+
+.headline {
+    font-size: 200;
+}
+
+.input {
+    display: flex;
+    padding: 1vh 4vw;
+    flex-direction: column;
+}
+
+.slidecontainer {
+    padding-bottom: 1vh;
+}
