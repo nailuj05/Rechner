@@ -25,3 +25,10 @@ shoeSizeOutput.innerHTML = shoeSizeSlider.value;
 shoeSizeSlider.oninput = function() {
     shoeSizeOutput.innerHTML = this.value;
 }
+
+var genderSizeSlider = document.getElementById("gender-size-slider");
+var genderSizeOutput = document.getElementById("gender-size-output");
+genderSizeOutput.innerHTML = genderSizeSlider.value;
+genderSizeSlider.oninput = function() {
+    genderSizeOutput.innerHTML = this.value;
+}

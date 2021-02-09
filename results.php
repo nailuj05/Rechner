@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 <body>
-    <?php include 'include/page-elements/header.php';?>
+    <?php include 'include/page-elements/header.php'; ?>
 
     <div class="body">
         <h2 class="results">Deine Ergebnisse</h2>

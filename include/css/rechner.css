@@ -25,3 +25,8 @@
     justify-self: center;
     display: flex;
 }
+
+.submit {
+    height: 4vh;
+    width: 8vh;
+}
