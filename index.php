@@ -20,5 +20,9 @@
     <div class="body">
         <h2 class="choosegender">Wähle das Geschlecht</h2>
     </div>
+
+    <div class="gender">
+        <a href="rechner.php?gender=woman"><img src="include/img/Woman.png"></a>
+    </div>
 </body>
 </html>
