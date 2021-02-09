@@ -15,10 +15,20 @@
     font-size: 200;
 }
 
-.input {
+.inputs {
     display: flex;
     padding: 1vh 4vw;
     flex-direction: column;
+}
+
+.input {
+    display: flex;
+    padding: 2vh 4vw;
+    flex-direction: row;
+}
+
+.input label {
+    padding
 }
 
 .slidecontainer {
