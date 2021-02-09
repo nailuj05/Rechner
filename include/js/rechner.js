@@ -18,3 +18,10 @@ hairOutput.innerHTML = hairSlider.value;
 hairSlider.oninput = function() {
     hairOutput.innerHTML = this.value;
 }
+
+var shoeSizeSlider = document.getElementById("shoe-size-slider");
+var shoeSizeOutput = document.getElementById("shoe-size-output");
+shoeSizeOutput.innerHTML = shoeSizeSlider.value;
+shoeSizeSlider.oninput = function() {
+    shoeSizeOutput.innerHTML = this.value;
+}

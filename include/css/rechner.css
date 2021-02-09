@@ -31,3 +31,8 @@
 .input label {
     padding-right: 1vh;
 }
+
+.submit {
+    justify-self: center;
+    display: flex;
+}
