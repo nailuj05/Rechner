@@ -24,13 +24,15 @@
 
 <?php
 
-$conn =  new mysqli("localhost", "root", "", 'menschen');
+$conn =  new mysqli("localhost", "root", "", 'shop');
+$sql = "SELECT * FROM `menschen`";
 $result = $conn->query($sql);
 
 while ($row = $result->fetch_assoc()) {
     echo "id: " . $row["id"] . " - Alter: " . $row["age"] . " Größe: " . $row["height"] . "<br>";
 
-    foreach ($row as &$value) {
+    for ($i = 0; $i <= mysqli_fetch_lengths($row); $i++) {
+        echo $row[$i];
     }
 }
 
