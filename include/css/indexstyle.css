@@ -32,6 +32,16 @@
     width: auto;
 }
 
+.helicopter{
+    display: flex;
+    justify-content: space-around;
+}
+
+.helicopter img{
+    height: 20vh;
+    width: auto;
+}
+
 .input {
     display: flex;
     padding: 1vh 4vw;

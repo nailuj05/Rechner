@@ -25,5 +25,10 @@
         <a href="rechner.php?gender=woman"><img src="include/img/Woman.png"></a>
         <a href="rechner.php?gender=man"><img src="include/img/Man.png"></a>
     </div>
+
+    <div class="helicopter">
+        <a href="rechner.php?gender=helicopter"><img src="include/img/Helicopter.jpg"></a>
+    </div>
+
 </body>
 </html>
