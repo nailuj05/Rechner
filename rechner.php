@@ -64,7 +64,11 @@
             }
 
             echo "
+<<<<<<< HEAD
                 <input name='genderValue' type='range' min='0' max='60' value='50' class='slider' id='gender-size-slider'>
+=======
+                <input type='range' min='0' max='60' value='50' class='slider' id='gender-size-slider'>
+>>>>>>> e8817ba26ab6418291869aa1162f5b399b6ca592
                 </div>
                 ";
         } else {
@@ -94,6 +98,7 @@
 </body>
 
 <?php
+<<<<<<< HEAD
 
 if (isset($_POST['submit'])) {
 
@@ -112,4 +117,15 @@ if (isset($_POST['submit'])) {
 }
 
 
+=======
+if (isset($_GET['submit'])) {
+    echo "submited";
+    header("location:results.php?price=69420");
+}
+
+if (isset($_GET['gender'])) {
+    $gender = $_GET['gender'];
+    echo $gender;
+}
+>>>>>>> e8817ba26ab6418291869aa1162f5b399b6ca592
 ?>
