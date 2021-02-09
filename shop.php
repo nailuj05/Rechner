@@ -24,16 +24,22 @@
 
 <?php
 
-$conn =  new mysqli("localhost", "root", "", 'shop');
+$conn =  new mysqli("localhost", "root", "", "shop");
 $sql = "SELECT * FROM `menschen`";
 $result = $conn->query($sql);
 
-while ($row = $result->fetch_assoc()) {
-    echo "id: " . $row["id"] . " - Alter: " . $row["age"] . " Größe: " . $row["height"] . "<br>";
+if ($result->num_rows > 0) {
+    // output data of each row
+    while ($row = $result->fetch_assoc()) {
 
-    for ($i = 0; $i <= mysqli_fetch_lengths($row); $i++) {
-        echo $row[$i];
+        // Hier wird einmal durch die gesamte Datenbank geloopt, 
+        // Dabei ist das array $row eine Reihe mit dessen index man 
+        // die gewünschten Daten aus der Datenbank bekommt 
+
+        echo $row['id'] . "<br>";
     }
+} else {
+    echo "0 results";
 }
 
 ?>
