@@ -19,4 +19,6 @@
         $Alter = $_POST['Alter'];
         echo $Alter;
     }
+
+    echo "Git hub go brrrr";
 ?>
