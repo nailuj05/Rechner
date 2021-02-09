@@ -4,26 +4,16 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.header {
-    background-color: rgb(96, 170, 235);
-    display: flex;
-    justify-content: center;
-    padding: 2vh;
-}
-
-.headline {
-    font-size: 200;
-}
-
 .body h2 {
     background-color: rgb(155, 158, 161);
     display: flex;
     justify-content: center;
     padding: 2vh;
     font-size: 150;
+    margin: 0;
 }
 
-.results{
+.results {
     display: flex;
     justify-content: center;
     padding: 2vh;
