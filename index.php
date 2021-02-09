@@ -23,6 +23,7 @@
 
     <div class="gender">
         <a href="rechner.php?gender=woman"><img src="include/img/Woman.png"></a>
+        <a href="rechner.php?gender=man"><img src="include/img/Man.png"></a>
     </div>
 </body>
 </html>
