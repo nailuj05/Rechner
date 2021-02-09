@@ -36,15 +36,15 @@
     }
 
     function calcCamels(float $price){
-        return $price / 3200;
+        return round($price / 3200);
     }
 
     function calcKartoffeln(float $price){
-        return $price / 11.2;
+        return round($price / 11.2);
     }
 
     function calcBitcoin(float $price){
-        return $price / bitcoinPrice();
+        return round(($price / bitcoinPrice()) * 1000) / 1000;
     }
 
     function bitcoinPrice(){
