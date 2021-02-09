@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <title>Rechner</title>
+</head>
 <form method="GET">
     <label for="Alter"> Alter: </label>
     <input type="range" name="Alter" min="1" max="100" value="50">
