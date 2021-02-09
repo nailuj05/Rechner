@@ -11,26 +11,26 @@
 <body>
     <?php include 'include/page-elements/header.php'; ?>
 
-    <form class="inputs">
+    <form class="inputs" method="POST">
 
         <div class="input">
             <label for="age">Alter: <span id="age-output"></span></label>
-            <input type="range" min="1" max="100" value="50" class="slider" id="age-slider">
+            <input name="age" type="range" min="1" max="100" value="50" class="slider" id="age-slider">
         </div>
 
         <div class="input">
             <label for="height">Größe: <span id="height-output"></span></label>
-            <input type="range" min="1" max="300" value="50" class="slider" id="height-slider">
+            <input name="height" type="range" min="1" max="300" value="50" class="slider" id="height-slider">
         </div>
 
         <div class="input">
             <label for="hair-color">Haarfarbe</label>
-            <input type="color" id="hair-color" name="hair-color" value="#ffffff">
+            <input name="hairColor" type="color" id="hair-color" value="#ffffff">
         </div>
 
         <div class="input">
             <label for="hair-length">Haarlänge: <span id="hair-length-output"></span></label>
-            <input type="range" min="0" max="300" value="50" class="slider" id="hair-length-slider">
+            <input name="hairLength" type="range" min="0" max="300" value="50" class="slider" id="hair-length-slider">
         </div>
 
         <!-- Genderbasierte Fallunterscheidung der Geschlechtsfunktionen -->
@@ -43,7 +43,7 @@
                 // echo "woman";
                 echo "
                         <div class='input'>
-                            <label for='gender-size'>Brustumlänge: <span id='gender-size-output'></span></label>
+                            <label for='gender-size'>Brustumfang: <span id='gender-size-output'></span></label>
 
                     ";
             }
@@ -60,12 +60,15 @@
                 echo "
                     <div class='input'>
                         <label for='gender-size'>Kaliber in cm: <span id='gender-size-output'></span></label>
-
                     ";
             }
 
             echo "
+<<<<<<< HEAD
+                <input name='genderValue' type='range' min='0' max='60' value='50' class='slider' id='gender-size-slider'>
+=======
                 <input type='range' min='0' max='60' value='50' class='slider' id='gender-size-slider'>
+>>>>>>> e8817ba26ab6418291869aa1162f5b399b6ca592
                 </div>
                 ";
         } else {
@@ -76,12 +79,12 @@
 
         <div class="input">
             <label for="shoe-size">Schuhgröße: <span id="shoe-size-output"></span></label>
-            <input type="range" min="0" max="60" value="50" class="slider" id="shoe-size-slider">
+            <input type="range" name="shoeSize" min="0" max="60" value="50" class="slider" id="shoe-size-slider">
         </div>
 
         <div class="input">
             <label for="hair-color">Augenfarbe</label>
-            <input type="color" id="hair-color" name="hair-color" value="#ffffff">
+            <input name="eyeColor" type="color" id="hair-color" value="#ffffff">
         </div>
 
         <input type="submit" class="btn btn-success submit" name="submit" value="submit">
@@ -95,6 +98,26 @@
 </body>
 
 <?php
+<<<<<<< HEAD
+
+if (isset($_POST['submit'])) {
+
+    // sammeln aller variablen 
+    $alter = $_POST['age'];
+    $height = $_POST['height'];
+    $hairColor = $_POST['hairColor'];
+    $eyeColor = $_POST['eyeColor'];
+    $genderValue = $_POST['genderValue'];
+    $shoeSize = $_POST['shoeSize'];
+    $hairLength = $_POST['hairLength'];
+
+    echo $hairLength;
+
+    header("location:results.php?price=69420");
+}
+
+
+=======
 if (isset($_GET['submit'])) {
     echo "submited";
     header("location:results.php?price=69420");
@@ -104,4 +127,5 @@ if (isset($_GET['gender'])) {
     $gender = $_GET['gender'];
     echo $gender;
 }
+>>>>>>> e8817ba26ab6418291869aa1162f5b399b6ca592
 ?>
