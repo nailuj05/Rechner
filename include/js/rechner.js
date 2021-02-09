@@ -11,3 +11,10 @@ heightOutput.innerHTML = heihgtSlider.value;
 heihgtSlider.oninput = function() {
     heightOutput.innerHTML = this.value;
 }
+
+var hairSlider = document.getElementById("hair-length-slider");
+var hairOutput = document.getElementById("hair-length-output");
+hairOutput.innerHTML = hairSlider.value;
+hairSlider.oninput = function() {
+    hairOutput.innerHTML = this.value;
+}

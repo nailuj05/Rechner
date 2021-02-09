@@ -16,21 +16,18 @@
 }
 
 .inputs {
-    display: flex;
-    padding: 1vh 4vw;
-    flex-direction: column;
+    padding: 1vh;
+    height: 30vh;
+    justify-content: space-around;
+    background-color: rgba(192, 192, 192, 0.877);
+    grid-template-columns: 20vw 20vw 20vw;
+    display: grid;
 }
 
 .input {
-    display: flex;
-    padding: 2vh 4vw;
-    flex-direction: row;
+    padding: 1vh 4vw;
 }
 
 .input label {
-    padding
-}
-
-.slidecontainer {
-    padding-bottom: 1vh;
+    padding-right: 1vh;
 }
