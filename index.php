@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+
+
 <head>
     <title>Rechner</title>
     <link rel="stylesheet" href="include/css/indexstyle.css">
@@ -13,7 +15,7 @@
 </head>
 
 <body>
-    <?php include 'include/page-elements/header.php';?> 
+    <?php include 'include/page-elements/header.php'; ?>
 
     <div class="body">
         <h2 class="choosegender">Wähle das Geschlecht</h2>
@@ -29,4 +31,5 @@
     </div>
 
 </body>
+
 </html>
